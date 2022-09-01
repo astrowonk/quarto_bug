@@ -1,7 +1,7 @@
 
 ## Example
 
-I'm going to pull in some dates "calculated" after this markdown block with Observable.
+I'm going to pull in some dates calculated after this markdown block with Observable.
 
 This works fine:
 
@@ -19,6 +19,11 @@ The range is between **${the_dates[0]}** and **${the_dates[1]}**.
 Yet this does!
 
 The range is between **${the_dates[1]}** and ${the_dates[1]}.
+
+What about this? 
+
+The range is **${the_dates[1]}** to **${the_dates[1]}**.
+
 
 ```{python}
 import datetime
