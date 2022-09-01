@@ -1,0 +1,32 @@
+
+## Example
+
+I'm going to pull in some dates "calculated" after this markdown block with Observable.
+
+This works fine:
+
+* Begin date: ${the_dates[0]}
+* End date ${the_dates[1]}
+
+So does this:
+
+**${the_dates[1]}**
+
+This doesn't work!
+
+The range is between **${the_dates[0]}** and **${the_dates[1]}**. 
+
+Yet this does!
+
+The range is between **${the_dates[1]}** and ${the_dates[1]}.
+
+```{python}
+import datetime
+
+begin_date = datetime.datetime(2022,1,1).strftime("%B %-d, %Y")
+end_date = datetime.datetime(2022,1,30).strftime("%B %-d, %Y")
+
+ojs_define(the_dates = [begin_date,end_date])
+
+
+```
