@@ -24,6 +24,10 @@ What about this?
 
 The range is **${the_dates[1]}** to **${the_dates[1]}**.
 
+Or this?
+
+The range is **Start: ${the_dates[1]}** test **Finish: ${the_dates[1]}**.
+
 
 ```{python}
 import datetime
